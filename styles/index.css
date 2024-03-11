@@ -1,0 +1,236 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    flex: 1 1 100vw;
+    display: flex;
+    background-color: #a036a3;
+    color: white;
+    flex-wrap: wrap;
+    height: 100px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Logo Imagem e Logo Fonte*/
+.headerlogo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+}
+
+#logo {
+    margin-left: 50px;
+    width: 80px;
+    height: fixed;
+    
+}
+
+#logoword {
+    font-family: "Caveat", cursive;
+    font-size: 35px;
+    margin-left: 10px;
+    color: gold;
+}
+/* logo imagem e logo fonte*/
+
+/*lista de conteudos do header*/
+.list {
+    display: flex;
+    margin-right: 50px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list a {
+    margin-left: 20px;
+    padding: 15px 0px 5px 0px;
+    position: relative;
+}
+
+.list a::after {
+    content:" ";
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.list a:hover::after {
+    width: 100%;
+}
+
+.list a:hover {
+    color: gold;
+    transition: 0.5s ease-in-out;
+}
+/*lista de conteudos do header*/
+
+/*Caixa de busca*/
+.caixapai{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixabusca{
+    background-color: rgba(255, 127, 80, 0);
+}
+
+.caixafilho{
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+.caixafilho i {
+    color: #757575;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.caixafilho input {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+/*Caixa de busca*/
+
+main {
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    background-image: url(imgs/Açaí\ 03.png);
+    height: 500px;
+    width: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    top: 50px;
+}
+
+#paratexto{
+    font-size: 40px
+}
+
+#spantexto{
+    font-size: 18px;
+}
+
+/*icones de midias sociais*/
+.iconespai{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    gap: 10px;
+    align-items: center;
+    height: 50px;
+    width: 220px;
+    font-size: 30px;
+    margin-left: 550px;
+    top: 5px;
+}
+
+#zap:hover{
+    color: #41DE5B;
+    transition: 0.5s ease-in-out;
+}
+
+#insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+}
+
+#insta:hover{
+    background: linear-gradient(to left, #F68000, #F60F59, #D300C5);
+    transition: 0.5s ease-in-out;
+}
+
+#facebook:hover{
+    color: #0866FF;
+    transition: 0.5s ease-in-out;
+}
+
+#github:hover{
+    color: #0E1118;
+    transition: 0.5s ease-in-out;
+}
+
+/*icones de midias sociais*/
+aside{
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    background-color: rgb(236, 120, 120);
+    height: 890px;
+    justify-content: center;
+    text-align: center;
+}
+
+.titlepro {
+    display: flex;
+}
+
+#h2pro {
+    margin-top: 20px;
+}
+
+.sectionpro {
+    display: flex;
+}
+
+.fotinhas {
+    display: flex;
+    height: 200px;
+    width: 260px;
+}
+
+footer{
+    display: flex;
+    flex: 1 1 100vw;  
+    flex-wrap: wrap;
+}
