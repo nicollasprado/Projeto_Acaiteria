@@ -1,5 +1,6 @@
 from src.controllers.functions import *
 
 routes = {
-    "functions_route":"/","rFunctions":functions.as_view("Teste"),
+    "index_route": "/home", "index_controller": IndexController.as_view("Test"),
+    "login_route": "/", "login_controller": LoginController.as_view("Login")
 } 

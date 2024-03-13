@@ -126,7 +126,7 @@ main {
     display: flex;
     flex: 1 1 100vw;
     flex-wrap: wrap;
-    background-image: url(imgs/Açaí\ 03.png);
+    background-image: url(../imgs/Acai03.png);
     height: 500px;
     width: fixed;
     background-repeat: no-repeat;
