@@ -10,4 +10,15 @@
     <button type="submit">Register</button>
 </form>
 
+{% for users in data %}
+    ID: {{users.0}}
+    Nome: {{users.1}} {{users.2}}
+        <form action="/delete/user/{{users.0}}" method="POST">
+            <button>DELETAR</button>
+        </form>
+        <a href="/update/user/{{users.0}}">Atualizar</a>
+        <br>
+        {% else %}
+        Nenhum produto cadastrado
+    {% endfor %}
 {% endblock %}

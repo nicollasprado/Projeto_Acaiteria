@@ -1,0 +1,21 @@
+{% extends 'base_login.html' %}
+
+{% block content %}
+
+<form action="/update/user/{{users.0}}" method="POST">
+    <label for="new_first_name">Atual: {{users.1}}</label>
+    <input type="text" name="new_first_name" placeholder="Primeiro nome">
+    <br>
+    <label for="new_last_name">Atual: {{users.2}}</label>
+    <input type="text" name="new_last_name" placeholder="Ultimo nome">
+    <br>
+    <label for="new_email">Atual: {{users.3}}</label>
+    <input type="email" name="new_email" placeholder="email">
+    <br>
+    <label for="new_password">Atual: {{users.4}}</label>
+    <input type="password" name="new_password" placeholder="password">
+    <br>
+    <button type="submit">Atualizar</button>
+</form>
+
+{% endblock %}
